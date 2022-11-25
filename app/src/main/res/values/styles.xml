@@ -23,6 +23,8 @@
         <item name="fontWeight">800</item>
         <item name="android:textSize">18sp</item>
         <item name="backgroundTint">@color/colorPrimaryDark</item>
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/wight</item>
     </style>
+
+    <color name="wight">#F5F0F0</color>
 </resources>
