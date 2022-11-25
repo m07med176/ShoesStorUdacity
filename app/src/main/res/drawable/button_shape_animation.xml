@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <solid android:color="@color/colorPrimaryDark"/>
+        <corners android:radius="@dimen/widget_radius"/>
+    </shape>
+</item>
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/colorPrimary" android:endColor="@color/colorPrimaryDark" android:angle="@integer/config_navAnimTime" />
+            <corners android:radius="@dimen/widget_radius"/>
+        </shape>
+    </item>
+</selector>

@@ -22,6 +22,7 @@ class LoginScreen : Fragment() {
             container,
             false)
 
+        activity!!.actionBar!!.hide()
 
         binding.buttonSignUp.setOnClickListener {
             findNavController().navigate(LoginScreenDirections.actionLoginFragmentToWelcomeFragment())
