@@ -17,7 +17,6 @@
 
     <string name="empty_shoe_list">Empty  Shoes List</string>
     <string name="shoe_list">Shoe List</string>
-    <string name="shoe_name">NAME: %s</string>
     <string name="shoe_company">COMPANY: %s</string>
     <string name="shoe_size">SIZE: %.1f</string>
     <string name="shoe_description">DESCRIPTION: %s</string>
@@ -29,5 +28,6 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="shoe_detail_name">Name</string>
+    <string name="add_new_shoe">Add New Shoe</string>
 
 </resources>

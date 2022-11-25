@@ -17,10 +17,20 @@
         android:orientation="vertical"
         android:padding="10dp">
 
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:text="@string/add_new_shoe"/>
         <EditText
             style="@style/InputStyleDetails"
             android:hint="@string/shoe_detail_name"
-            android:id="@+id/shoe_name_edit"
+            android:id="@+id/shoe_name_input"
             android:inputType="text"
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
@@ -29,7 +39,7 @@
 
         <EditText
             style="@style/InputStyleDetails"
-            android:id="@+id/shoe_company_edit"
+            android:id="@+id/shoe_company_input"
             android:inputType="text"
             android:hint="@string/shoe_detail_company"
             android:layout_width="match_parent"
@@ -39,6 +49,7 @@
         <EditText
             android:hint="@string/shoe_detail_size"
             style="@style/InputStyleDetails"
+            android:id="@+id/shoe_size_input"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:text="@={viewModel.shoeSize}"/>
@@ -47,6 +58,7 @@
 
         <EditText
             style="@style/InputStyleDetails"
+            android:id="@+id/shoe_description_input"
             android:inputType="text"
             android:hint="Description"
             android:layout_width="match_parent"
