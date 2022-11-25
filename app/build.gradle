@@ -53,7 +53,7 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1' // utils for logs
 
 //    // region Lifecycle
-//    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
 //    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
 //    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
 //    // endregion Lifecycle
