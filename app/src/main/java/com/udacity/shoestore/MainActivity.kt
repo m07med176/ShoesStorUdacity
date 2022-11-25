@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-
-
         Timber.plant(Timber.DebugTree())
     }
 

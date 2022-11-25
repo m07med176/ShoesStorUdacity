@@ -5,4 +5,8 @@
     <string name="instructions_title">Instructions</string>
     <string name="shoe_list_title">Shoe List</string>
     <string name="shoe_detail_title">Shoe Detail</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="login_btn">Login</string>
+    <string name="password_input">Put Your Password here</string>
+    <string name="email_input">Put Your Email here</string>
 </resources>
