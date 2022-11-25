@@ -36,6 +36,22 @@ class ShoeDetailScreen : Fragment() {
         binding.viewModel = shoeDetailsViewModel
         binding.lifecycleOwner = this
 
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(ShoeDetailScreenDirections.actionShoeDetailFragmentToShoeListFragment())
+        }
+
+        binding.saveButton.setOnClickListener {
+            if (shoeDetailsViewModel.validateFields()) {
+                val shoe = shoeDetailsViewModel.buildShoe()
+                shoesViewModel.addShoe(shoe)
+                findNavController().navigate(ShoeDetailScreenDirections.actionShoeDetailFragmentToShoeListFragment())
+            } else {
+                Toast.makeText(context, getString(R.string.empty_alert), Toast.LENGTH_SHORT).show()
+            }
+        }
+
         return binding.root
     }
+
 }

@@ -27,7 +27,9 @@
     <string name="shoe_detail_description">Description</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="shoe_name">Name: %s</string>
     <string name="shoe_detail_name">Name</string>
     <string name="add_new_shoe">Add New Shoe</string>
+    <string name="empty_alert">You Should To Fill All Fields</string>
 
 </resources>
