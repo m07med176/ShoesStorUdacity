@@ -36,4 +36,12 @@
         <item name="android:background">@drawable/input_shape_animation</item>
     </style>
 
+    <style name="InputStyleDetails">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_height">@dimen/item_input_detail</item>
+        <item name="android:background">@drawable/item_shoe_list_border</item>
+    </style>
+
+    <dimen name="item_input_detail">40dp</dimen>
 </resources>
