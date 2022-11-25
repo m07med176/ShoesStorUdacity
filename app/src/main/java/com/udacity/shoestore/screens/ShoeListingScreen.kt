@@ -5,6 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import com.udacity.shoestore.R
 import com.udacity.shoestore.viewmodel.ShoesListViewModel
 import com.udacity.shoestore.databinding.FragmentShoeListingScreenBinding
@@ -32,6 +33,11 @@ class ShoeListingScreen : Fragment() {
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
 
+        viewModel.shoesList.observe(viewLifecycleOwner, Observer { shoesList ->
+            for (shoe in shoesList) {
+                addShoeToView(container, shoe)
+            }
+        })
         binding.fab.setOnClickListener {
             findNavController().navigate(ShoeListingScreenDirections.actionShoeListFragmentToShoeDetailFragment())
         }
