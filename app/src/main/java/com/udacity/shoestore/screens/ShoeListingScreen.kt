@@ -1,10 +1,8 @@
 package com.udacity.shoestore.screens
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import com.udacity.shoestore.R
@@ -30,6 +28,7 @@ class ShoeListingScreen : Fragment() {
             container,
             false)
 
+        setHasOptionsMenu(true)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
 
@@ -48,5 +47,14 @@ class ShoeListingScreen : Fragment() {
         )
         itemViewList.shoe = shoe
         binding.itemList.addView(itemViewList.root)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.main_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        findNavController().navigate(ShoeListingScreenDirections.actionShoeListFragmentToLoginFragment())
+        return true
     }
 }
